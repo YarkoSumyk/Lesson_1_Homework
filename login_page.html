@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> </head>
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .pictureBlock {
+        width: 60vw;
+        height: 100vh;
+        background-image: url(login_page_picture.png);
+        background-size: 60vw 100vh;
+    }
+    
+    .loginBlock {
+        width: 40vw;
+        height: 100vh;
+        padding: 10vh 2vw;
+    }
+    
+    .loginForm {
+        width: 33vw;
+        height: 60vh;
+    }
+    
+    .loginForm > input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .loginForm > h3 {}
+    
+    .loginForm > p {
+        display: block;
+    }
+</style>
+
+<body style="display: flex">
+    <div class="pictureBlock"></div>
+    <div class="loginBlock">
+        <form name="loginForm" class="loginForm">
+            <h3>Log in</h3>
+            <p><small>If you don't have an account yet, please <a href="register_page.html"><u>register</u></a> first.</small></p>
+            <div class="form-group">
+                <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email"> </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password">
+                <p style="text-align:right"><small><a href=""><u>I forgot my password</u></a></small></p>
+            </div>
+               <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1" style="font-size: 11px; padding-top: 3px">Remember me</label>
+            </div>
+            <br>
+            <br>
+            <button type="submit" class="btn btn-primary" style="width: 100%">Log in</button>
+        </form>
+    </div>
+</body>
+
+</html>
